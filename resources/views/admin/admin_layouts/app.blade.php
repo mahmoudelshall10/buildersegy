@@ -5,18 +5,18 @@
     <title>Builders | Dashboard</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
     <!-- Bootstrap 3.3.2 -->
-    <link href="{{ asset('admin_bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />    
+    <link href="{{ asset('admin_design/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />    
     <!-- FontAwesome 4.3.0 -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Ionicons 2.0.0 -->
     <link href="http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css" rel="stylesheet" type="text/css" />    
     <!-- DATA TABLES -->
-    <link href="{{ asset('admin_plugins/datatables/dataTables.bootstrap.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin_design/plugins/datatables/dataTables.bootstrap.css') }}" rel="stylesheet" type="text/css" />
     <!-- Theme style -->
-    <link href="{{ asset('admin_dist/css/AdminLTE.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin_design/dist/css/AdminLTE.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
-    <link href="{{ asset('admin_dist/css/skins/_all-skins.min.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('admin_design/dist/css/skins/_all-skins.min.css') }}" rel="stylesheet" type="text/css" />
     
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -100,17 +100,17 @@
     </script>
 -->
     <!-- Bootstrap 3.3.2 JS -->
-    <script src="{{ asset('admin_bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>    
+    <script src="{{ asset('admin_design/bootstrap/js/bootstrap.min.js') }}" type="text/javascript"></script>    
      <!-- DATA TABES SCRIPT -->
-     <script src="{{ asset('admin_plugins/datatables/jquery.dataTables.js') }}" type="text/javascript"></script>
-     <script src="{{ asset('admin_plugins/datatables/dataTables.bootstrap.js') }}" type="text/javascript"></script>
+     <script src="{{ asset('admin_design/plugins/datatables/jquery.dataTables.js') }}" type="text/javascript"></script>
+     <script src="{{ asset('admin_design/plugins/datatables/dataTables.bootstrap.js') }}" type="text/javascript"></script>
       
     <!-- Slimscroll -->
-    <script src="{{ asset('admin_plugins/slimScroll/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('admin_design/plugins/slimScroll/jquery.slimscroll.min.js') }}" type="text/javascript"></script>
     <!-- FastClick -->
-    <script src='{{ asset('admin_plugins/fastclick/fastclick.min.js') }}'></script>
-    <!-- AdminLTE App -->
-    <script src="{{ asset('admin_dist/js/app.min.js') }}" type="text/javascript"></script>
+    <script src='{{ asset('admin_design/plugins/fastclick/fastclick.min.js') }}'></script>
+    <!-- admin_designLTE App -->
+    <script src="{{ asset('admin_design/dist/js/app.min.js') }}" type="text/javascript"></script>
 
     <!-- page script -->
     <script type="text/javascript">
