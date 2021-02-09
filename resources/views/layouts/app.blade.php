@@ -11,6 +11,12 @@
     <link href="//db.onlinewebfonts.com/c/082252176f1f4953cea2a7e5e9f300f4?family=Franklin+Gothic+Demi" rel="stylesheet" type="text/css"/>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.js'></script>
+        @if(Request::segment(1) == 'bspyl-home' || Request::segment(1) == 'bspyl-about' || Request::segment(1) == 'bspyl-stages' ||Request::segment(1) == 'bspyl-form' )
+        <link rel="shortcut icon" href="{{asset('images/bspyl.png')}}" type="image/x-icon">
+        @else
+        <link rel="shortcut icon" href="{{asset('images/builders_5.png')}}" type="image/x-icon">
+        @endif
+   
     <link rel="stylesheet" href="{{ asset('css/open-iconic-bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
     

@@ -52,11 +52,6 @@
 
             </div>
             </form> 
-
-
-            <a class="btn btn-link" style="margin-left:-25px" href="{{ route('password.request') }}">
-                Forgot Your Password?
-            </a>
         </div><!-- /.login-box-body -->
     </div><!-- /.login-box -->
 

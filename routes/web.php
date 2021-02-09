@@ -44,12 +44,12 @@ Route::get('event', 'HomeController@Event');
 
     Auth::routes();
 
-    Route::get('admin', 'Admin\AdminController@index');
+    Route::get('admin', 'Admin\AdminController@index')->name('admin.index');
     Route::resource('admin/numbers', 'Admin\NumberController');
     Route::resource('admin/bspyl', 'Admin\BspylController');
 
 
-    Route::get('admin/users', 'Admin\UserController@index');
+    Route::get('admin/users', 'Admin\UserController@index')->name('admin.users');
 
     Route::group(['middleware' => ['userAuth']], function () {
             Route::get('admin/users/create', 'Admin\UserController@create');

@@ -20,7 +20,6 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->string('photo')->default('default.jpg');
             $table->enum('fldType', ['Admin', 'User']);
-            $table->string('api_token',60);
             $table->rememberToken();
             $table->timestamps();
         });
