@@ -14,8 +14,7 @@ use Illuminate\Http\Request;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('event', 'HomeController@Event');
-// Route::group(['middleware' => ['comingDate']], function () {
+
     Route::get('about', 'HomeController@about');
     Route::get('builders-story', 'HomeController@buildersStory');
 
@@ -68,13 +67,5 @@ Route::get('event', 'HomeController@Event');
     Route::resource('admin/team_members', 'Admin\TeamController');
     Route::resource('admin/trainings', 'Admin\TrainingController');
     Route::resource('admin/stories', 'Admin\StoryController');
-    Route::resource('admin/partners', 'Admin\PartnerController');
-
-    Route::get('admin/logout',function()
-        {
-            Auth::logout();
-            Session::flush();
-            return redirect('/admin');
-        });
-
-// });
+    Route::resource('admin/partners', 'Admin\PartnerController');  
+    

@@ -11,11 +11,11 @@
     <link href="//db.onlinewebfonts.com/c/082252176f1f4953cea2a7e5e9f300f4?family=Franklin+Gothic+Demi" rel="stylesheet" type="text/css"/>
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.css' rel='stylesheet' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.2.1/mapbox-gl.js'></script>
-        @if(Request::segment(1) == 'bspyl-home' || Request::segment(1) == 'bspyl-about' || Request::segment(1) == 'bspyl-stages' ||Request::segment(1) == 'bspyl-form' )
-        <link rel="shortcut icon" href="{{asset('images/bspyl.png')}}" type="image/x-icon">
-        @else
-        <link rel="shortcut icon" href="{{asset('images/builders_5.png')}}" type="image/x-icon">
-        @endif
+    @if(Request::segment(1) == 'bspyl-home' || Request::segment(1) == 'bspyl-about' || Request::segment(1) == 'bspyl-stages' ||Request::segment(1) == 'bspyl-form' )
+    <link rel="shortcut icon" href="{{asset('images/bspyl.png')}}" type="image/x-icon">
+    @else
+    <link rel="shortcut icon" href="{{asset('images/builders_5.png')}}" type="image/x-icon">
+    @endif
    
     <link rel="stylesheet" href="{{ asset('css/open-iconic-bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
@@ -67,11 +67,17 @@
             <li class="nav-item dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><a class="nav-link">Services</a>
             
               <ul style='font-size:15px;' class="dropdown-content" id="dropdown_content">
-                <li class="{{ Request::segment(1) === 'consultancy' ? 'nav-item active' : 'nav-item' }}dropdown-item" ><a href="{{ asset('consultancy') }}" class="nav-link">Consultancy</a></li>
+                <li class="{{ Request::segment(1) === 'consultancy' ? 'nav-item active' : 'nav-item' }}dropdown-item" >
+                  <a href="{{ url('/consultancy') }}" class="nav-link">Consultancy</a>
+                </li>
                   <hr style="margin:0px">
-                <li class="{{ Request::segment(1) === 'training' ? 'nav-item active' : 'nav-item' }}dropdown-item" ><a href="{{ asset('training') }}" class="nav-link">Training</a></li>
+                <li class="{{ Request::segment(1) === 'training' ? 'nav-item active' : 'nav-item' }}dropdown-item" >
+                  <a href="{{ url('/training') }}" class="nav-link">Training</a>
+                </li>
                   <hr style="margin:0px">
-                <li class="{{ Request::segment(1) === 'iso-accreditation' ? 'nav-item active' : 'nav-item' }}dropdown-item" ><a href="{{ asset('iso-accreditation') }}" class="nav-link">ISO Accreditation</a></li>
+                <li class="{{ Request::segment(1) === 'iso-accreditation' ? 'nav-item active' : 'nav-item' }}dropdown-item" >
+                  <a href="{{ url('/iso-accreditation') }}" class="nav-link">ISO Accreditation</a>
+                </li>
               </ul>
             
             </li>
@@ -244,7 +250,7 @@
           <div class="col-md-12 text-center">
 
             <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy; 2015 All rights reserved By BUILDERS Company </a>
+  Copyright &copy; {{date('Y')}} All rights reserved By BUILDERS Company </a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
           </div>
         </div>

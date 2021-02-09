@@ -61,11 +61,6 @@ class HomeController extends Controller
         return view('welcome');
     }
 
-    public function Event()
-    {
-        return view('event');
-    }
-
     public function contact()
     {
         $strTitle = 'Your FeedBack';

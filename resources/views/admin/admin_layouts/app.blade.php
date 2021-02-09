@@ -21,7 +21,7 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins 
          folder instead of downloading all of them to reduce the load. -->
     <link href="{{ asset('admin_design/dist/css/skins/_all-skins.min.css') }}" rel="stylesheet" type="text/css" />
-     <link rel="shortcut icon" href="{{asset('images/builders_5.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('images/builders_5.png')}}" type="image/x-icon">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -59,7 +59,13 @@
                   <!-- Menu Footer-->
                   <li class="user-footer">
                     <div class="pull-right">
-                    <a href="{{ asset('/admin/logout') }}" class="btn btn-default btn-flat">Sign out</a>
+                      <a  class="btn btn-default btn-flat" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        Logout
+                      </a>
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          {{ csrf_field() }}
+                      </form>
+
                     </div>
                   </li>
                 </ul>
