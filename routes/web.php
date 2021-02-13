@@ -41,7 +41,12 @@ use Illuminate\Http\Request;
     Route::post('/bspyl-form', 'BspylController@store');
 
 
-    Auth::routes();
+//     Auth::routes();
+
+   Route::get('admin/login', 'Admin\Auth\LoginController@showLoginForm')->name('login');
+   Route::post('admin/login', 'Admin\Auth\LoginController@login');
+   Route::post('admin/logout', 'Admin\Auth\LoginController@logout')->name('logout');
+        
 
     Route::get('admin', 'Admin\AdminController@index')->name('admin.index');
     Route::resource('admin/numbers', 'Admin\NumberController');
