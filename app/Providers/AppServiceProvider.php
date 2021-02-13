@@ -15,10 +15,10 @@ class AppServiceProvider extends ServiceProvider
     {
         Schema::defaultStringLength(191);
         // dd(Config('app.env'));
-        // if(Config('app.env') !== 'local') 
-        // {
-        //     $this->app['request']->server->set('HTTPS', true);
-        // }
+        if(Config('app.env') !== 'local') 
+        {
+            $this->app['request']->server->set('HTTPS', true);
+        }
     }
 
     /**
