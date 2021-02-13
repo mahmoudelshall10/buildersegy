@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Builders | Dashboard</title>
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
-   
+   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <!-- Bootstrap 3.3.2 -->
     <link href="{{ asset('admin_design/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" />    
     <!-- FontAwesome 4.3.0 -->

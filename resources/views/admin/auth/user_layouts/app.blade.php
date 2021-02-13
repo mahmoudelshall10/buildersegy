@@ -11,6 +11,7 @@
     @endif
 
     <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link href="{{ asset('admin_design/dist/css/AdminLTE.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- iCheck -->
     <!-- Bootstrap 3.3.2 -->
